@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="100%" height="100%" fill="#FAF7F0"/>
+<text x="56" y="64" fill="#1A4BFF" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="700">AI FRONTIERS FORUM</text>
+<text x="56" y="120" fill="#0B1F3A" font-size="42" font-family="Arial, Helvetica, sans-serif" font-weight="700">Hybrid Search Engine</text>
+<text x="56" y="168" fill="#5A6B7D" font-size="22" font-family="Arial, Helvetica, sans-serif">One concept. Three AI perspectives. One tested architecture.</text>
+<rect x="48.0" y="280.0" width="312.0" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="68.0" y="320.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Query Router</text>
+<text x="68.0" y="358.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Pre-processes user input, generating</text>
+<text x="68.0" y="384.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">tokens for BM25 and embeddings for</text>
+<text x="68.0" y="410.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Vector search.</text>
+<rect x="384.0" y="280.0" width="312.0" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="404.0" y="320.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Keyword Retrieval Module</text>
+<text x="404.0" y="358.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Executes BM25 algorithm against the</text>
+<text x="404.0" y="384.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">inverted index for exact match and</text>
+<text x="404.0" y="410.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">lexical relevance.</text>
+<rect x="720.0" y="280.0" width="312.0" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="740.0" y="320.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Vector Retrieval Module</text>
+<text x="740.0" y="358.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Executes cosine similarity search</text>
+<text x="740.0" y="384.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">against the dense vector index for</text>
+<text x="740.0" y="410.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">semantic relevance.</text>
+<rect x="48.0" y="524.0" width="312.0" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="68.0" y="564.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Score Normalization Layer</text>
+<text x="68.0" y="602.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Applies Min-Max scaling or Z-score</text>
+<text x="68.0" y="628.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">normalization to align score</text>
+<text x="68.0" y="654.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">distributions from disparate</text>
+<text x="68.0" y="680.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">retrievers.</text>
+<rect x="384.0" y="524.0" width="312.0" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="404.0" y="564.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Fusion Engine</text>
+<text x="404.0" y="602.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Combines normalized scores. Supports</text>
+<text x="404.0" y="628.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">configurable weights (e.g., 0.5 BM25</text>
+<text x="404.0" y="654.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">+ 0.5 Vector) or Reciprocal Rank</text>
+<text x="404.0" y="680.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Fusion (RRF).</text>
+<rect x="720.0" y="524.0" width="312.0" height="220.0" rx="16" fill="#FFFFFF" stroke="#1A4BFF" stroke-width="3"/>
+<text x="740.0" y="564.0" fill="#1A4BFF" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="700">Diversity Control (MMR)</text>
+<text x="740.0" y="602.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">Iteratively selects documents that</text>
+<text x="740.0" y="628.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">maximize relevance to the query</text>
+<text x="740.0" y="654.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">while minimizing similarity to</text>
+<text x="740.0" y="680.0" fill="#0B1F3A" font-size="18" font-family="Arial, Helvetica, sans-serif">already selected documents.</text>
+<text x="56" y="1310" fill="#5A6B7D" font-size="16" font-family="Arial, Helvetica, sans-serif">Practical AI insights. Join the community.  aifrontiersforum.org/join</text>
+</svg>

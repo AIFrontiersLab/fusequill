@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "check": "pytest",
+      "detail": "edition tests",
+      "ok": true
+    },
+    {
+      "check": "readme_present",
+      "detail": "edition README",
+      "ok": true
+    },
+    {
+      "check": "pipeline_present",
+      "detail": "pipeline module",
+      "ok": true
+    },
+    {
+      "check": "evidence_packet",
+      "detail": "2 sources",
+      "ok": true
+    },
+    {
+      "check": "architecture_boxes",
+      "detail": "6 boxes",
+      "ok": true
+    },
+    {
+      "check": "peer_review_disclosed",
+      "detail": "peer-reviewed by AI",
+      "ok": true
+    },
+    {
+      "check": "post_technical_signal",
+      "detail": "linkedin technical cues",
+      "ok": true
+    }
+  ],
+  "concept_id": 34,
+  "edition": "hybrid-search-engine",
+  "ok": true,
+  "pytest": {
+    "ok": true,
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "...                                                                      [100%]\n3 passed in 0.01s\n"
+  }
+}

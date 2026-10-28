@@ -1,0 +1,30 @@
+flowchart LR
+  b1["Query Router"]
+  b2["Keyword Retrieval Module"]
+  b3["Vector Retrieval Module"]
+  b4["Score Normalization Layer"]
+  b5["Fusion Engine"]
+  b6["Diversity Control (MMR)"]
+  b1 -->|1. Route query to Keyword Module| b2
+  b1 -->|2. Route query to Vector Module| b3
+  b2 -->|3. Pass results to Normalization Layer| b4
+  b3 -->|4. Pass results to Normalization Layer| b4
+  b4 -->|5. Normalize and fuse scores| b5
+  b5 -->|6. Apply diversity control| b6
+
+flowchart TB
+  subgraph happy [Happy path]
+    h_b1["Query Router"]
+    h_b2["Keyword Retrieval Module"]
+    h_b3["Vector Retrieval Module"]
+    h_b4["Score Normalization Layer"]
+    h_b5["Fusion Engine"]
+    h_b6["Diversity Control (MMR)"]
+    h_b1 --> h_b2
+    h_b2 --> h_b3
+    h_b3 --> h_b4
+    h_b4 --> h_b5
+    h_b5 --> h_b6
+  end
+  fail["Failure / abstain"]
+  h_b6 -.-> fail

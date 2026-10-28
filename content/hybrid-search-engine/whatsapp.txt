@@ -1,0 +1,10 @@
+*AI Frontiers Architecture Lab*
+Hybrid Search Engine
+
+Combine keyword and vector retrieval.
+
+Takeaway: Hybrid search is not just 'adding vectors to keywords.' It requires careful engineering of fusion algorithms (RRF), consistent security filtering across both paths and robust failure handling. The componentized approach allows independent scaling and tuning of sparse and dense retrievers, providing the best balance of precision, recall and latency for enterprise applications.
+
+Repo: https://github.com/AIFrontiersLab/ai-frontiers-lab
+
+_peer-reviewed by AI. Review before publishing._

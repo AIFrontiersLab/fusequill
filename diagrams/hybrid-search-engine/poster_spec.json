@@ -1,0 +1,68 @@
+{
+  "boxes": [
+    {
+      "detail": "Pre-processes user input, generating tokens for BM25 and embeddings for Vector search.",
+      "id": "b1",
+      "label": "Query Router"
+    },
+    {
+      "detail": "Executes BM25 algorithm against the inverted index for exact match and lexical relevance.",
+      "id": "b2",
+      "label": "Keyword Retrieval Module"
+    },
+    {
+      "detail": "Executes cosine similarity search against the dense vector index for semantic relevance.",
+      "id": "b3",
+      "label": "Vector Retrieval Module"
+    },
+    {
+      "detail": "Applies Min-Max scaling or Z-score normalization to align score distributions from disparate retrievers.",
+      "id": "b4",
+      "label": "Score Normalization Layer"
+    },
+    {
+      "detail": "Combines normalized scores. Supports configurable weights (e.g., 0.5 BM25 + 0.5 Vector) or Reciprocal Rank Fusion (RRF).",
+      "id": "b5",
+      "label": "Fusion Engine"
+    },
+    {
+      "detail": "Iteratively selects documents that maximize relevance to the query while minimizing similarity to already selected documents.",
+      "id": "b6",
+      "label": "Diversity Control (MMR)"
+    }
+  ],
+  "flows": [
+    {
+      "from": "b1",
+      "label": "1. Route query to Keyword Module",
+      "to": "b2"
+    },
+    {
+      "from": "b1",
+      "label": "2. Route query to Vector Module",
+      "to": "b3"
+    },
+    {
+      "from": "b2",
+      "label": "3. Pass results to Normalization Layer",
+      "to": "b4"
+    },
+    {
+      "from": "b3",
+      "label": "4. Pass results to Normalization Layer",
+      "to": "b4"
+    },
+    {
+      "from": "b4",
+      "label": "5. Normalize and fuse scores",
+      "to": "b5"
+    },
+    {
+      "from": "b5",
+      "label": "6. Apply diversity control",
+      "to": "b6"
+    }
+  ],
+  "subtitle": "One concept. Three AI perspectives. One tested architecture.",
+  "title": "Hybrid Search Engine"
+}
